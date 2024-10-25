@@ -12,7 +12,7 @@ title                  = "Shadocs theme for Hugo"
 theme                  = "shadocs"
 themesdir              = "../.."
 
-[params.author]
+[Author]
   name = "Jordan GAZEAU"
 
 [module]
@@ -21,21 +21,11 @@ themesdir              = "../.."
     min = '0.112.0'
     max = ''
   [[module.mounts]]
-    source = 'static'
-    target = 'static'
-  [[module.mounts]]
-    source = 'assets'
-    target = 'static/assets'
-  [[module.mounts]]
     source = 'asyncapi'
     target = 'static/asyncapi'
   [[module.mounts]]
     source = 'openapi'
     target = 'static/openapi'
-  [[module.mounts]]
-    source = 'jsoneditor'
-    target = 'static/jsoneditor'
-
 
 [taxonomies]
   category = "categories"
@@ -77,25 +67,21 @@ themesdir              = "../.."
   faviconmd               = "![Favicon](/images/favicon.png)"
   homeLayout              = "onboarding"
   siteContentOrder        = "weight"
-  # toc                     = true
-  # globalBanner            = true
+  # toc                   = true
+  # globalBanner          = true
   currentVersion          = "latest"
-  latestVersionUrl        = "https://jgazeau.github.io/shadocs/"
-  # enforceRefrelLinks      = true
-  # navbarPrintEntry        = false
-  # navbarQRCodeEntry       = false
-  # navbarSchortcutsEntry   = false
-  # navbarInfo              = false
+  latestVersionUrl        = "https://shadocs.netlify.app/"
+  # enforceRefrelLinks    = true
   [params.navbar.shortcuts]
     [params.navbar.shortcuts.example]
       keys     = ["Shift","1"]
       function = "scExample"
   [[params.navbar.versions]]
     name = 'latest'
-    url  = 'https://jgazeau.github.io/shadocs/'
+    url  = 'https://shadocs.netlify.app/'
   [[params.navbar.versions]]
     name = 'deprecated version'
-    url  = 'https://jgazeau.github.io/shadocs/404.html'
+    url  = 'https://shadocs.netlify.app/404.html'
   [params.taxonomies]
     [params.taxonomies.categories]
       icon = "fa-solid fa-table-cells"
@@ -103,15 +89,14 @@ themesdir              = "../.."
       icon = "fa-solid fa-tag"
   [params.includes]
     jsModules = [
-      "js/jsoneditor.js",
-      "js/shortcuts.js"
-    ]
+        "js/shortcuts.js"
+      ]
     js        = []
     css       = [
-      "css/shortcuts.css"
-    ]
+        "css/shortcuts.css"
+      ]
     sass      = [
-      "sass/custom/example.sass"
+        "sass/custom/example.sass"
     ]
   [params.versions]
     hugo_min         = "[0.112.0](https://github.com/gohugoio/hugo/releases/tag/v0.112.0)"

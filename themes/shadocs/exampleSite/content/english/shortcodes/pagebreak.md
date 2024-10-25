@@ -17,7 +17,6 @@ The **pagebreak** shortcode is used to define a page break for print.
 | ---- | ---------------------- | ----------- |
 
 {{< pagebreak >}}
-
 # Examples
 ---
 

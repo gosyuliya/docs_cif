@@ -34,7 +34,7 @@ To define a shortcut, follow this process (example with the **example** (`Maj + 
 />}}
 3. Define the javascript code associated with the shortcut and called through the function defined in step 1:
 {{< snippet
-    file="assets/js/shortcuts.js"
+    file="templates/configuration/shortcuts.js"
     caption="shortcuts.js"
     codelang="js"
 />}}

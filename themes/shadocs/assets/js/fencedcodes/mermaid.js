@@ -12,12 +12,12 @@ let mermaidConfig = {
   logLevel: 'fatal',
   theme: 'dark',
 };
-document.addEventListener('DOMContentLoaded', async function () {
-  mermaid.initialize(mermaidConfig);
-  await renderMermaids();
+document.addEventListener('DOMContentLoaded', function () {
+  mermaid.mermaidAPI.initialize(mermaidConfig);
+  renderMermaids();
 });
 // Render all mermaid graphs of the page
-async function renderMermaids() {
+function renderMermaids() {
   let divm = document.getElementsByClassName('language-mermaid');
   for (let i = 0; i < divm.length; i++) {
     const mermaidId = `scMermaid${i}`;
@@ -25,10 +25,10 @@ async function renderMermaids() {
     divm[i].parentElement.replaceWith(
       getLoadingHelper('sc-mermaid-wrapper', mermaidId)
     );
-    await renderMermaid(mermaidId, graphDefinition);
+    renderMermaid(mermaidId, graphDefinition);
   }
 }
-async function renderMermaid(mermaidId, graphDefinition) {
+function renderMermaid(mermaidId, graphDefinition) {
   const mermaidSvgId = `${mermaidId}-svg`;
   const mermaidWrapper = document.getElementById(mermaidId);
   const mermaidFragment = document.createDocumentFragment();
@@ -45,8 +45,10 @@ async function renderMermaid(mermaidId, graphDefinition) {
   mermaidSvgExport.appendChild(mermaidSvgExportIcon);
   mermaidWrapper.appendChild(mermaidFragment);
   try {
-    const { svg } = await mermaid.render(mermaidSvgId, graphDefinition);
-    mermaidContainer.insertAdjacentHTML('afterbegin', svg);
+    let insertSvg = function (svgCode) {
+      mermaidContainer.insertAdjacentHTML('afterbegin', svgCode);
+    };
+    mermaid.mermaidAPI.render(mermaidSvgId, graphDefinition, insertSvg);
     let mermaidRendered = document.getElementById(mermaidSvgId);
     let svgBlob = new Blob([mermaidRendered.outerHTML], {
       type: 'image/svg+xml;charset=utf-8',

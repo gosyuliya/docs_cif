@@ -10,7 +10,7 @@ tags: ["Content management"]
 
 The **openapi** shortcode allows to display an OpenAPI documentation associated to a service.
 
-# Parameters
+# Paramètres
 ---
 
 | Name | Type(named/positional) | Description |
@@ -27,9 +27,9 @@ Source of the OpenAPI documentation.
 | -------- | --------- |
 |{{< md >}}
 ```
-{{</*/* openapi source="openapi/example.yaml" */*/>}}
+{{</*/* openapi source="/openapi/example.yaml" */*/>}}
 ```
-{{< /md >}}|{{< openapi source="openapi/example.yaml" >}}|
+{{< /md >}}|{{< openapi source="/openapi/example.yaml" >}}|
 |{{< md >}}
 ```
 {{</*/* openapi source="https://petstore.swagger.io/v2/swagger.json" */*/>}}
