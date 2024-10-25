@@ -1,26 +1,28 @@
-name: Deploy to GitHub Pages
+name: Deploy Hugo site to GitHub Pages
+
 on:
   push:
     branches:
-      - main  # измените на нужную ветку, если требуется
+      - main  # измените на вашу основную ветку, если требуется
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repository
+      - name: Checkout the repository
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          npm install  # или другая команда, если используете другой пакетный менеджер
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'  # можно указать версию Hugo
 
-      - name: Build project
-        run: |
-          npm run build  # измените команду на ту, которая создаёт папку public
+      - name: Build the site
+        run: hugo --minify  # команда для сборки Hugo, можно изменить при необходимости
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./public  # папка, в которую Hugo по умолчанию собирает сайт
