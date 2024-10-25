@@ -7,9 +7,9 @@
   {{- end -}}
   <asyncapi-component
     asyncapi-id="{{- $.Scratch.Get "asyncapiId" -}}"
-    schemaUrl="{{- .Get "source" -}}"
+    schemaUrl="{{- .Get "source" | relURL -}}"
     schemaFetchOptions='{"method":"GET","mode":"cors"}'
-    cssImportPath="{{- "css/external/asyncapi/fiori.min.css" | relURL -}}"
+    cssImportPath="{{- "css/external/asyncapi/default.min.css" | relURL -}}"
   >
   </asyncapi-component>
   {{- partial "theme/loading.html" -}}
