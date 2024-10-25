@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/section2/platform_1/</loc>
+    <loc>//localhost:1313/section2/platform_1/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section2/platform_2/</loc>
+    <loc>//localhost:1313/section2/platform_2/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section1/</loc>
+    <loc>//localhost:1313/section1/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section2/</loc>
+    <loc>//localhost:1313/section2/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section3/</loc>
+    <loc>//localhost:1313/section3/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section4/</loc>
+    <loc>//localhost:1313/section4/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section5/</loc>
+    <loc>//localhost:1313/section5/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/section6/</loc>
+    <loc>//localhost:1313/section6/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-10-25T13:16:56+03:00</lastmod>
   </url>
 </urlset>
