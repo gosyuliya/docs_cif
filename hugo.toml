@@ -1,4 +1,4 @@
-baseURL = "https://gosyuliya.github.io/docs_cif"
+baseURL = "https://gosyuliya.github.io/docs_cif/"
 title = "Документация Платформы Цифриума"
 theme = "shadocs"
 enableGitInfo = true # Доступ к репозиторию

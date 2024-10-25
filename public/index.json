@@ -58,7 +58,7 @@
       "permalink": "/docs_cif/section4/",
       "permalinkTitle": "Домашняя страница / Пошаговые руководства",
       "title": "Пошаговые руководства",
-      "content":"Глоссарий# Панель администратора \u0026ndash; админка.\nОпределение# graph TB\rsubgraph Étape 2\rb1(Action 2.1) --\u0026gt; b2(Action 2.2)\rend\rsubgraph Étape 1\ra1(Action 1.1) --\u0026gt; a2(Action 1.2)\rend ghgftrfh\n"},{
+      "content":"Глоссарий# Панель администратора\nОпределение# "},{
       "id": "6",
       "rootTitleIndex": "5",
       "rootTitle": "Техническая документация",
