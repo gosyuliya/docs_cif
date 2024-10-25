@@ -16,10 +16,11 @@ defaultContentLanguage = "ru"
   enableTOC                = true  # Включение дерева навигации (оглавления)
   enableSearch             = false  
   currentVersion           = "latest"  # Curent version of the website
-  latestVersionUrl         = "https://gosyuliya.github.io/docs_cif"  # Url of the latest version of the website
+  latestVersionUrl         = "https://gosyuliya.github.io/docs_cif/"  # Url of the latest version of the website
   navbarInfo               = false
   #globalBanner            = true
-  search = true
+  search                   = true
+  relativeURLs             = true
 
 [outputs]
   home = ["HTML", "JSON"]
