@@ -1,4 +1,4 @@
-# baseURL = "https://gosyuliya.github.io/docs_cif/"
+baseURL = "https://gosyuliya.github.io/docs_cif/"
 title = "Документация Платформы Цифриума"
 theme = "shadocs"
 enableGitInfo = true # Доступ к репозиторию
@@ -16,7 +16,7 @@ defaultContentLanguage = "ru"
   enableTOC                = true  # Включение дерева навигации (оглавления)
   enableSearch             = false  
   currentVersion           = "latest"  # Curent version of the website
-  latestVersionUrl         = "https://gosyuliya.github.io/cifrium_wiki/"  # Url of the latest version of the website
+  latestVersionUrl         = "https://gosyuliya.github.io/docs_cif/"  # Url of the latest version of the website
   navbarInfo               = false
   #globalBanner            = true
   search = true
